@@ -1,41 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- Define o conjunto de caracteres como UTF-8 -->
     <meta charset="UTF-8">
-    <!-- Define a viewport para um layout responsivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Define o título da página -->
     <title>Exemplo Flexbox</title>
-    <!-- Estilo CSS interno -->
     <style>
-        /* Estilo para o contêiner flexível */
         .container {
-            display: flex; /* Define o contêiner como flexível */
-            justify-content: space-around; /* Distribui os itens com espaço ao redor */
-            align-items: center; /* Centraliza os itens verticalmente */
-            height: 100vh; /* Define a altura do contêiner como 100% da altura da viewport */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
         }
 
-        /* Estilo para os itens flexíveis */
         .item {
-            background-color: #4CAF50; /* Define a cor de fundo dos itens */
-            color: white; /* Define a cor do texto dos itens */
-            padding: 20px; /* Define o preenchimento interno dos itens */
-            text-align: center; /* Centraliza o texto dos itens */
-            margin: 5px; /* Define a margem ao redor dos itens */
-            flex: 1; /* Faz os itens crescerem igualmente para preencher o espaço disponível */
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin: 5px;
+            flex: 1;
         }
     </style>
 </head>
 <body>
-    <!-- Contêiner flexível -->
     <div class="container">
-        <!-- Item flexível 1 -->
         <div class="item">Item 1</div>
-        <!-- Item flexível 2 -->
         <div class="item">Item 2</div>
-        <!-- Item flexível 3 -->
         <div class="item">Item 3</div>
     </div>
 </body>

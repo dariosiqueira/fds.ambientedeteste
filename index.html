@@ -1,32 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Define o conjunto de caracteres como UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Define a viewport para um layout responsivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo Flexbox</title>
+    <!-- Define o título da página -->
+    <title>Página Inicial</title>
+    <!-- Estilo CSS interno -->
     <style>
-        .container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100vh;
+        /* Estilo para o corpo da página */
+        body {
+            font-family: Arial, sans-serif; /* Define a fonte padrão */
+            margin: 0; /* Remove a margem padrão */
+            padding: 0; /* Remove o preenchimento padrão */
+            display: flex; /* Define o contêiner flexível */
+            flex-direction: column; /* Alinha os itens em coluna */
+            min-height: 100vh; /* Define a altura mínima como 100% da altura da viewport */
         }
 
-        .item {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            margin: 5px;
-            flex: 1;
+        /* Estilo para o cabeçalho */
+        header {
+            background-color: #4CAF50; /* Define a cor de fundo */
+            color: white; /* Define a cor do texto */
+            padding: 15px; /* Define o preenchimento interno */
+            display: flex; /* Define o contêiner flexível */
+            justify-content: space-between; /* Distribui os itens com espaço entre eles */
+            align-items: center; /* Centraliza os itens verticalmente */
+        }
+
+        /* Estilo para a lista de navegação */
+        nav ul {
+            list-style-type: none; /* Remove os marcadores da lista */
+            padding: 0; /* Remove o preenchimento padrão */
+            display: flex; /* Define o contêiner flexível */
+            gap: 10px; /* Define o espaçamento entre os itens */
+        }
+
+        /* Estilo para os itens da lista de navegação */
+        nav ul li {
+            display: inline; /* Exibe os itens em linha */
+        }
+
+        /* Estilo para os links da navegação */
+        nav ul li a {
+            color: white; /* Define a cor do texto */
+            text-decoration: none; /* Remove a sublinha dos links */
+        }
+
+        /* Estilo para o contêiner principal */
+        main {
+            flex: 1; /* Faz o contêiner crescer para preencher o espaço disponível */
+            display: flex; /* Define o contêiner flexível */
+            flex-direction: column; /* Alinha os itens em coluna */
+            align-items: center; /* Centraliza os itens horizontalmente */
+            padding: 20px; /* Define o preenchimento interno */
+        }
+
+        /* Estilo para as seções */
+        section {
+            width: 80%; /* Define a largura como 80% do contêiner principal */
+            max-width: 800px; /* Define a largura máxima */
+            margin-bottom: 20px; /* Define a margem inferior */
+        }
+
+        /* Estilo para o rodapé */
+        footer {
+            background-color: #4CAF50; /* Define a cor de fundo */
+            color: white; /* Define a cor do texto */
+            text-align: center; /* Centraliza o texto */
+            padding: 10px; /* Define o preenchimento interno */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="item">Item 1</div>
-        <div class="item">Item 2</div>
-        <div class="item">Item 3</div>
-    </div>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Bem-vindo à Minha Página</h1>
+        <!-- Navegação -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção Home -->
+        <section id="home">
+            <h2>Home</h2>
+            <p>Esta é a seção inicial da página.</p>
+        </section>
+        <!-- Seção Sobre -->
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Informações sobre o propósito da página.</p>
+        </section>
+        <!-- Seção Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Informações de contato.</p>
+        </section>
+    </main>
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2025 Minha Página. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
